@@ -1,0 +1,90 @@
+/*
+ENTÊTE
+*/
+
+/* Image de fond */
+.card {
+    /* center center pour centrer en axe x et y et fixed pour fixer l'image et no-repeat */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../images/carte.jpg") center center fixed no-repeat;
+    background-size: cover;
+    height: auto;
+    width: auto;
+    padding: 25% 1% 5% 1%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+/* La carte */
+.content-card {
+    border: solid 1px #745d20;
+    background: #745e2069;
+    border-radius: 10px;
+    padding: 1%;
+    width: auto;
+    height: auto;
+}
+.niveau1,
+.niveau2,
+.niveau3,
+.niveau4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1%;
+}
+.cards {
+    background: #c7c9cec4;
+    border: 1px solid;
+    border-radius: 10px;
+    width: 45%;
+    margin: 1%;
+    -webkit-box-shadow: 5px 5px 15px 5px #f3ede077;
+    box-shadow: 5px 5px 15px 5px #f3ede077;
+}
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+.desc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: auto;
+    height: auto;
+    padding: 0.5%;
+}
+.price {
+    text-align: center;
+}
+
+/*
+RESPONSIVE
+*/
+
+@media screen and (max-width: 767px) {
+    .content-card {
+        padding-top: 100%;
+    }
+    .niveau1,
+    .niveau2,
+    .niveau3,
+    .niveau4 {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .cards {
+        width: 100%;
+    }
+    .desc {
+        font-size: large;
+    }
+    .price {
+        font-size: small;
+    }
+}
+@media screen and (min-width: 768px) {
+    .cards {
+        width: 48%;
+    }
+}

@@ -1,0 +1,241 @@
+/*
+CHARTE GRAPHIQUE
+*/
+
+/* Styles d'écritures */
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Infant:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+.cormorant {
+    font-family: "Cormorant Infant", serif;
+}
+.khula {
+    font-family: "Khula", serif;
+}
+.roboto {
+    font-family: "Roboto", sans-serif;
+}
+/* Couleurs */
+.c1 {
+    color: #745d20;
+}
+.c2 {
+    color: #cea660;
+}
+.c3 {
+    color: #f3ede0;
+}
+.c4 {
+    color: #6b7a40;
+}
+
+/*
+NAVBAR
+*/
+
+/* Conteneur */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.55);
+    box-shadow: 1px 1px 3px rgba(255, 255, 255, 0.54);
+    z-index: 99;
+}
+.index {
+    margin-right: 1%;
+}
+/* Slogan */
+.slogan {
+    width: 50%;
+    text-align: center;
+    text-transform: uppercase;
+}
+p.text-slogan {
+    margin: 0;
+    color: #f3ede0;
+}
+/* Le liens est bleu d'origine */
+.text-slogan a {
+    color: #f3ede0;
+}
+/* Les quatre onglets à droite */
+.nav-item {
+    padding: 8px;
+    display: flex;
+    align-items: center;
+}
+.nav-link {
+    color: white;
+    padding: 0;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    background-color: transparent;
+    text-align: center;
+}
+.btn.btn-order {
+    border: 3px solid #745d20;
+    background: #745d20;
+    border-radius: 5px;
+    color: white;
+}
+.name:hover {
+    text-decoration: none;
+    color: white;
+}
+.text-slogan a:hover {
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid #745d20;
+    background-color: #745d20;
+}
+.nav-link:hover {
+    border-radius: 5px;
+    border: 2px solid #745d20;
+    background-color: #745d20;
+    color: black;
+}
+.btn.btn-order:hover {
+    color: white;
+    background: transparent;
+}
+/*
+BOUTON DE RESERVATION
+*/
+
+.btn.btn-reservation {
+    position: fixed;
+    top: 650px;
+    left: 100px;
+    border: solid 3px #745d20;
+    border-radius: 20px;
+    background: #745d20;
+    color: white;
+}
+.btn.btn-reservation:active,
+.btn.btn-reservation:focus,
+.btn.btn-reservation:hover {
+    border: solid 3px #745d20;
+    background: transparent;
+    color: white;
+}
+
+/*
+FOOTER
+*/
+
+.footer {
+    background: url(/assets/images/Footer.jpg) center center fixed no-repeat;
+    background-size: cover;
+    color: white;
+}
+.footer-hours {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.footer-hours span {
+    text-decoration: underline;
+}
+.footer-nav-links {
+    color: black;
+    text-decoration: none;
+}
+.follow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+h3.fs-5:hover,
+.footer a:hover {
+    color: #745d20;
+    cursor: pointer;
+}
+
+/*
+RESPONSIVE
+*/
+
+@media screen and (max-width: 767px) {
+    /*
+        NAVBAR
+        */
+
+    .container-fluid {
+        flex-direction: column;
+    }
+    .slogan {
+        width: auto;
+    }
+    p.text-slogan {
+        font-size: xx-small;
+        padding: 10% 0 10%;
+    }
+    .nav-link,
+    .nav-item {
+        text-align: center;
+    }
+    /*
+        BOUTON DE RESERVATION
+        */
+    .reservation {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .btn.btn-reservation {
+        margin: 10%;
+        top: 500px;
+        left: auto;
+    }
+    /*
+        FOOTER
+        */
+    .footer {
+        text-align: center;
+    }
+    .footer-hours {
+        font-size: xx-small;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    /*
+        NAVBAR
+        */
+
+    .text-slogan {
+        font-size: smaller;
+    }
+    /*
+        BOUTON DE RESERVATION
+        */
+    .reservation {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .btn.btn-reservation {
+        top: 500px;
+        left: auto;
+    }
+    /*
+        FOOTER
+        */
+    .footer {
+        text-align: center;
+    }
+    .footer-hours {
+        font-size: xx-small;
+    }
+}
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    /*
+        NAVBAR
+        */
+    .slogan {
+        width: 25%;
+    }
+    .text-slogan {
+        font-size: smaller;
+    }
+}
+/*Les fonts ne s'appliquent pas.*/
+/*Mentions légales et politique de confidentialité*/

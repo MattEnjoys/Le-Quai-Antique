@@ -1,0 +1,54 @@
+/*
+ENTÊTE
+*/
+
+/* Image de fond */
+.banner {
+    /* center center pour centrer en axe x et y et fixed pour fixer l'image et no-repeat */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../images/menu.jpg") center center fixed no-repeat;
+    background-size: cover;
+    height: auto;
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Les menus */
+.menu {
+    width: 50%;
+    margin: 1%;
+    border: solid 2px #745d20;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.508);
+    -webkit-box-shadow: 5px 5px 15px 5px #000000;
+    box-shadow: 5px 5px 15px 5px #000000;
+    text-align: center;
+}
+h1 {
+    color: #745d20;
+}
+h2 {
+    color: #cea660;
+}
+h4 {
+    color: #6b7a40;
+}
+
+/*
+RESPONSIVE
+*/
+
+@media screen and (max-width: 767px) {
+    .banner {
+        padding-top: 80%;
+    }
+    .menu {
+        width: 100%;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+    .banner {
+        padding-top: 200px;
+    }
+}

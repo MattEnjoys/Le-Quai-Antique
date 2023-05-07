@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <!-- METADONNEES -->
+        <meta name="author" content="Matthieu Ebzant" />
+        <meta property="og:title" content="Le Quai Antique" />
+        <meta
+            property="og:description"
+            content="Restaurant Gastronomique à CHambéry en Savoie"
+        />
+        <meta property="og:url" content="https://Lequaiantique.fr" />
+        <meta
+            property="og:image"
+            content="https://aaentraide.com/assets/image/Logoblack.ico"
+        />
+        <meta property="og:type" content="article" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- LINKS CSS -->
+        <link rel="stylesheet" href="/assets/css/reset.css" />
+        <link rel="stylesheet" href="/assets/css/style.css" />
+        <!-- BOOTSTRAP CSS -->
+        <link href="/assets/css/bootstrap.min.css" rel="stylesheet" />
+        <!-- ICONE -->
+        <link rel="website icon" href="/assets/images/Logoblack.ico" />
+        <!--==== FONTAWESOME ====-->
+        <script
+            src="https://kit.fontawesome.com/15904ef487.js"
+            crossorigin="anonymous"
+        ></script>
+        <title>Le Quai Antique | Accueil</title>
+    </head>
+    <body>
+        <!-- NAVBAR -->
+        <header>
+            <!-- navbar pour un class que l'on stylise dans css -->
+            <!-- Enleve la class bg-light et mets la couleur que tu souhaite en css -->
+            <!-- Position-fixed pour fixer la nav au scrool et w-100 pour la width -->
+            <nav
+                class="navbar navbar-expand-lg navbar-dark position-fixed w-100 py-1"
+            >
+                <div class="container-fluid">
+                    <a href="/index.html" class="index"
+                        ><img
+                            src="/assets/images/Logowhite.ico"
+                            alt="logo"
+                            class="image-logo"
+                        />
+                    </a>
+                    <div class="slogan">
+                        <p class="text-slogan">
+                            Restaurant gastronomique à
+                            <a href="https://www.chambery.fr/"
+                                >Chambéry, en Savoie</a
+                            >
+                        </p>
+                    </div>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div
+                        class="collapse navbar-collapse"
+                        id="navbarSupportedContent"
+                    >
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link active"
+                                    aria-current="page"
+                                    href="/index.html"
+                                    >Accueil</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link"
+                                    href="./assets/html/menus.html"
+                                    >Nos Menus</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="nav-link"
+                                    href="./assets/html/carte.html"
+                                    >Nos Plats à la Carte</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a
+                                    class="btn btn-order"
+                                    href="/assets/html/connexion.html"
+                                    >Connexion</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- FIN NAVBAR -->
+        <!-- CONTENU -->
+        <main>
+            <!-- ENTETE -->
+            <section class="entete">
+                <!-- Image de fond -->
+                <div class="banner"></div>
+            </section>
+            <!-- FIN ENTETE -->
+            <!-- CORPS DE PAGE -->
+            <section class="carrousel py-3">
+                <!-- Image du chef -->
+                <div class="boss d-flex mx-3">
+                    <img
+                        src="/assets/images/Lechef.jpg"
+                        class="theboss"
+                        alt="le chef"
+                    />
+                    <!-- Texte en hover -->
+                    <div class="content">
+                        <div class="hover-text">
+                            <p>Le Chef Justin</p>
+                            <p>
+                                Dès son plus jeune âge, ses yeux s’illuminent
+                                dès qu’il cuisine avec sa grand-mère paternelle,
+                                il se régale à découvrir ce culte sacré de la
+                                cuisine. C’est à l’âge de 12 ans que sa passion
+                                s’exprime totalement au point de vouloir lui
+                                consacrer sa vie et qu’il déclare sans doute
+                                aucun :
+                            </p>
+                            <p>« Plus tard, je serai Cuisinier »...</p>
+                        </div>
+                    </div>
+                    <!-- Fin Texte en hover -->
+                </div>
+                <!-- Fin Image du chef -->
+                <!-- Carrousel -->
+                <div class="slider">
+                    <div class="slides">
+                        <input type="radio" name="radio-btn" id="radio1" />
+                        <input type="radio" name="radio-btn" id="radio2" />
+                        <input type="radio" name="radio-btn" id="radio3" />
+                        <input type="radio" name="radio-btn" id="radio4" />
+                        <div class="slide first">
+                            <h3>Lorem, ipsum dolor.</h3>
+                            <p>sit amet.</p>
+                            <img src="/assets/images/Plat1.jpg" alt="" />
+                        </div>
+                        <div class="slide">
+                            <h3>Lorem, ipsum dolor.</h3>
+                            <p>sit amet.</p>
+                            <img src="/assets/images/Plat2.jpg" alt="" />
+                        </div>
+                        <div class="slide">
+                            <h3>Lorem, ipsum dolor.</h3>
+                            <p>sit amet.</p>
+                            <img src="/assets/images/Plat3.jpg" alt="" />
+                        </div>
+                        <div class="slide">
+                            <h3>Lorem, ipsum dolor.</h3>
+                            <p>sit amet.</p>
+                            <img src="/assets/images/Plat4.jpg" alt="" />
+                        </div>
+                        <div class="navigation-auto">
+                            <div class="auto-btn1"></div>
+                            <div class="auto-btn2"></div>
+                            <div class="auto-btn3"></div>
+                            <div class="auto-btn4"></div>
+                        </div>
+                    </div>
+                    <div class="navigation-manual">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                        <label for="radio4" class="manual-btn"></label>
+                    </div>
+                </div>
+            </section>
+            <!-- Fin Carrousel -->
+            <!-- FIN CORPS DE PAGE -->
+        </main>
+        <!-- FIN CONTENU -->
+        <!-- DIV DE RESERVATION -->
+        <div class="reservation">
+            <button class="btn btn-reservation btn-lg">
+                Reserver mon moment gustatif privilégié
+            </button>
+        </div>
+        <!-- FIN DIV DE RESERVATION -->
+        <!-- FOOTER ====-->
+        <footer class="footer py-3 pt-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-4 col-md-12 col-sm-12 mb-1">
+                        <h3 class="fs-5">Nos horaires d'ouverture</h3>
+                        <nav class="nav flex-column">
+                            <a class="footer-hours fs-6 py-2">
+                                <p>
+                                    <span>Lundi / Mardi :</span> 12:00 - 14:00 ~
+                                    19:00 - 22:00
+                                </p>
+                            </a>
+                            <a class="footer-hours fs-6 py-2"
+                                ><p>
+                                    <span>Mercredi :</span> Fermeture
+                                    hebdomadaire
+                                </p></a
+                            >
+                            <a class="footer-hours fs-6 py-2"
+                                ><p>
+                                    <span>Jeudi / Vendredi :</span> 12:00 -
+                                    14:00 ~ 19:00 - 22:00
+                                </p></a
+                            >
+                            <a class="footer-hours fs-6 py-2"
+                                ><p><span>Samedi :</span> 19:00 - 23:00</p></a
+                            >
+                            <a class="footer-hours fs-6 py-2"
+                                ><p><span>Dimanche :</span> 12:00 - 14:00</p></a
+                            >
+                        </nav>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-12 mb-4">
+                        <h6 class="fs-5">Plan du site</h6>
+                        <nav class="nav flex-column">
+                            <a
+                                class="footer-nav-links fs-6 py-2"
+                                aria-current="page"
+                                href="#"
+                                >Accueil</a
+                            >
+                            <a class="footer-nav-links fs-6 py-2" href="#"
+                                >Nos Menus</a
+                            >
+                            <a class="footer-nav-links fs-6 py-2" href="#"
+                                >Nos Plats à la carte</a
+                            >
+                            <a class="footer-nav-links fs-6 py-2" href="#"
+                                >Connexion</a
+                            >
+                        </nav>
+                    </div>
+                    <div class="col-lg-2 col-md-6 col-sm-12 mb-4">
+                        <h6 class="fs-5">Liens Utiles</h6>
+                        <nav class="nav flex-column">
+                            <a
+                                class="footer-nav-links fs-6 py-2"
+                                aria-current="page"
+                                href="https://www.chambery.fr/"
+                            >
+                                Ville de Chambéry</a
+                            >
+                            <a class="footer-nav-links fs-6 py-2" href="#"
+                                >Recrutement</a
+                            >
+                            <a
+                                class="footer-nav-links fs-6 py-2"
+                                href="https://www.ledauphine.com/"
+                                >Le Dauphiné</a
+                            >
+                            <a class="footer-nav-links fs-6 py-2" href="#"
+                                >Mentions légales</a
+                            >
+                            <a class="footer-nav-links fs-6 py-2" href="#"
+                                >Politique de confidentialité</a
+                            >
+                        </nav>
+                    </div>
+                    <div class="col-lg-2 col-md-12 col-sm-12 mb-1">
+                        <h6 class="fs-5">Nous Trouver</h6>
+                        <nav class="nav flex-column">
+                            <a
+                                class="footer-nav-links fs-6 py-2 follow"
+                                href="#"
+                                ><i class="fa-brands fa-facebook"></i
+                                ><i class="fa-brands fa-instagram"></i
+                            ></a>
+
+                            <a
+                                class="footer-nav-links fs-6 py-2"
+                                aria-current="page"
+                                href="https://goo.gl/maps/oezmCgRcyxHL11Ux5"
+                            >
+                                <i>SARL Le Quai Antique</i>
+                            </a>
+                            <a
+                                href="tel:+336458694"
+                                class="footer-nav-links fs-6 py-2"
+                            >
+                                +33667065624</a
+                            >
+                            <a
+                                href="mailto:lequaiantique@orange.fr"
+                                class="footer-nav-links fs-6 py-2"
+                            >
+                                lequaiantique@orange.fr</a
+                            >
+                        </nav>
+                    </div>
+
+                    <div class="col-12 text-center">
+                        <i class="fa-regular fa-copyright"></i> Matthieu EBZANT,
+                        Tous droits réservés
+                        <!-- script js pour mettre automatiquement l'année à jour  -->
+                        <script>
+                            document.write(new Date().getFullYear());
+                        </script>
+                        Copyright
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- FIN FOOTER -->
+        <!-- BOOTSTRAP JS -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+            crossorigin="anonymous"
+        ></script>
+        <!--==== LINK JS ====-->
+        <script src="/assets/js/app.js"></script>
+    </body>
+</html>

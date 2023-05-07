@@ -1,0 +1,86 @@
+/*
+ENTÊTE
+*/
+
+/* Image de fond */
+.banner {
+    /* center center pour centrer en axe x et y et fixed pour fixer l'image et no-repeat */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../images/connexion.jpg") center center fixed no-repeat;
+    background-size: cover;
+    height: auto;
+    padding: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+i.fa-regular {
+    cursor: pointer;
+}
+form {
+    background: rgba(255, 255, 255, 0.508);
+    padding: 1%;
+    border: solid 3px #745d20;
+    border-radius: 10px;
+    min-width: 300px;
+}
+.close {
+    padding: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    width: auto;
+    height: auto;
+}
+form .inputs {
+    display: flex;
+    flex-direction: column;
+}
+form .inputs input[type="email"],
+input[type="password"] {
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background: #f2f2f2;
+    outline: none;
+    margin-bottom: 15px;
+}
+form p.inscription {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: black;
+}
+.connecting {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+form button {
+    padding: 15px 25px;
+    border-radius: 5px;
+    border: solid 3px #745d20;
+    font-size: 15px;
+    color: #fff;
+    background: #745d20;
+    outline: none;
+    cursor: pointer;
+}
+form p.inscription:hover {
+    color: white;
+    cursor: pointer;
+}
+form button:hover {
+    color: #745d20;
+    background: transparent;
+    cursor: pointer;
+}
+/* LA DIV DE RESERVATION EST INVISIBLE */
+.reservation {
+    display: none;
+}
+@media screen and (max-width: 767px) {
+    .banner{
+        padding-top: 30vh;
+    }
+}
